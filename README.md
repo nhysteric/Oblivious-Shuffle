@@ -8,9 +8,10 @@ Forked from [this repository](https://github.com/dujiajun/PSU), with an updated 
 git submodule update --init --recursive 
 cd extern/libOTe
 # in extern/libOTe
-python build.py -- -D ENABLE_RELIC=ON -D ENABLE_NP=ON -D ENABLE_KOS=ON -D ENABLE_IKNP=ON -D ENABLE_SILENTOT=ON
+python build.py --setup --boost --relic --all 
+python build.py -D ENABLE_RELIC=ON -D ENABLE_NP=ON -D ENABLE_KOS=ON -D ENABLE_IKNP=ON -D ENABLE_SILENTOT=ON
 cd ../..
-# in PSU ROOT
+# in Oblivious-Shuffle ROOT
 cmake -B build .
 cmake --build build -j
 ```
