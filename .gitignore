@@ -1,0 +1,7 @@
+**/.venv
+**/__pycache__
+**/nohup.out
+**/test/
+**/.cache
+
+build/

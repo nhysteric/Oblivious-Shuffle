@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dbg:shuffle_vector",
+            "type": "lldb",
+            "request": "launch",
+            "program": "build/shuffle_vector",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: build",
+        },
+        {
+            "name": "dbg:shuffle_matrix",
+            "type": "lldb",
+            "request": "launch",
+            "program": "build/shuffle_matrix",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: build",
+        }
+    ]
+}
