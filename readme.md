@@ -13,11 +13,11 @@ git clone git@github.com:nhysteric/Oblivious-Shuffle.git --recursive
 cd Oblivious-Shuffle/extern/libOTe
 python build.py --all --boost --sodium --relic
 cd ../..
-cmake --no-warn-unused-cli -B build -S .  -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_CXX_STANDARD=20  -DCMAKE_BUILD_TYPE:STRING=Release
+cmake --no-warn-unused-cli -B build -S .  -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_CXX_STANDARD=20  -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE:STRING=Release
 cmake --build build -j
 ```
 
-Ensure that your C++ compiler supports C++20.
+Your C++ compiler should be `clang++` version 10.0.0 or higher, with support for C++20 and SIMD.
 
 ## Run
 

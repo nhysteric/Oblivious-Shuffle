@@ -26,6 +26,7 @@
             "command": "cmake",
             "args": [
                 " --no-warn-unused-cli",
+                "-DCMAKE_CXX_COMPILER=clang++",
                 "-DCMAKE_BUILD_TYPE:STRING=Debug",
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE",
                 "-DCMAKE_CXX_STANDARD=20",
